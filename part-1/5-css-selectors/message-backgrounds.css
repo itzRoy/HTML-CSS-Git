@@ -1,1 +1,14 @@
 /* Add your CSS code below */
+.messages>:first-child{
+    background-color: red;
+}
+
+.messages>:nth-child(2){
+    background-color: cadetblue;
+}
+
+.messages>:last-child{
+    background-color: yellow;
+}
+
+
