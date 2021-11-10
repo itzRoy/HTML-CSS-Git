@@ -1,1 +1,19 @@
 /* Write your media queries and flexbox CSS below */
+@media only screen and (min-width: 480px){
+    .site-header__nav{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    header{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    header{
+        justify-content: space-between;
+    }
+}       
