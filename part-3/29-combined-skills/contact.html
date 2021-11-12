@@ -12,10 +12,10 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
-          <ul class="main-nav__list">
+        <nav class="main-nav">
+          <ul class="main-nav__list flex-container">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
             </li>
@@ -26,7 +26,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,7 +48,7 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
@@ -56,16 +56,43 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required/>
           </div>
           <div class="contact-form__field">
+            <label>Email
+              <input type="email" required/>
+            </label>
+          </div>
+
+          <div class="contact-form__field">
+            <label>Message
             <textarea
               name="message"
-              placeholder="Your message should not be longer than 200 words."
-            ></textarea>
+              placeholder="Your message should not be longer than 200 words." required
+            ></textarea></label>
           </div>
+          <fieldset>
+            <legend>what branch are you interested in</legend>
+            <label>
+              <input type="radio" name="branch" value=" London">
+              London
+            </label>
+
+
+            <label>
+              <input type="radio" name="branch" value="Glasgow">
+              Glasgow
+            </label>
+
+            <label>
+              <input type="radio" name="branch" value="Manchester">
+              Manchester
+            </label>
+
+          </fieldset>
           <button type="submit">Send</button>
         </form>
+        
       </main>
 
       <footer>
@@ -74,7 +101,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span style="color: #c85308;">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg

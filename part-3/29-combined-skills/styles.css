@@ -1,1 +1,44 @@
 /* Add your own CSS code below */
+@media(min-width: 992px){
+    body > div > main > div.hero > h2{
+        font-size: 3rem;
+        max-width: 60%;
+    }
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset label{
+    display: block;
+    margin-top: 10px;
+}
+
+article{
+    max-width: 50em;
+    margin: 0 auto 2rem;
+    line-height: 1.7rem;
+}
+
+@media(min-width: 767px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .views{
+        display: flex;
+    }
+
+    .view-list__item{
+        margin-left: 20px;
+    }
+
+    .views__all{
+        margin-left: auto;
+    }
+}
+
